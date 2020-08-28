@@ -1,0 +1,2 @@
+certbot register --no-eff-email --server http://192.168.1.3:8181/acme/directory --agree-tos -m test@test.com -q --eab-kid fjpR1w2G4j26zmUQoW83 --eab-hmac-key Q1l3YThJc3drTk9weWtoVjhtRGk5cENPQmhOZHVkT0ZMMk5veEtUZ2s5bExQbjdCRnBwR2VpOVVSbndjMnFIOA==
+certbot --apache --server http://192.168.1.3:8181/acme/directory -d <fqdn> --agree-tos --non-interactive --email test@test.com
